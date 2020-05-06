@@ -21,7 +21,7 @@ body {
 	@include clearfix;
 	border-bottom-style: solid transparent;
 	border-bottom-color: #f6aa17;
-	border-bottom-width: .2em;
+	border-bottom-width: .1em;
 }
 
 /* Site name */
@@ -227,8 +227,8 @@ $button-size: 1.5rem;
 	clear: both;
 	padding-top: 2em;
 	border-top-width: 2em;
-	border-top-style: solid transparent;
-	border-top-color: #808080;
+	border-top-style: solid;
+	border-top-color: rgba(255, 99, 71, 0.5);
 	h1 {
 		margin-top: 0;
 	}

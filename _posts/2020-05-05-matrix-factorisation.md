@@ -1,6 +1,11 @@
-
-# matrix-factorisation
-An implementation of the Matrix Factorization algorithm used in Recommender Systems. 
+---
+layout: post
+title: Matrix Factorisation
+excerpt: "Implementing the matrix factorisation algorithm for recommender systems"
+tags: [intro, R, matrix factorisation, recommender systems, clustering]
+comments: true
+category: blog
+---
 
 # Introduction
 

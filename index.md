@@ -11,4 +11,4 @@ As any explorer would, I will post some of new findings and discoveries that I m
 
 - Statistics
 - Machine Learning
-
+- Data visualisation

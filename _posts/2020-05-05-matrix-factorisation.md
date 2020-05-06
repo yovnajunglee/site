@@ -1,8 +1,11 @@
-
-# matrix-factorisation
-An implementation of the Matrix Factorization algorithm used in Recommender Systems. 
-
-# Introduction
+---
+layout: post
+title: A movie recommender system
+excerpt: "Implementing the matrix factorisation algorithm for recommender systems"
+tags: [intro, R, matrix factorisation, recommender systems, clustering]
+comments: true
+category: blog
+---
 
 The explosive growth in technology has contributed to an overwhelming amount of online information and digitalized services through the rise of platforms such as *YouTube*, *Netflix* and *Amazon*.  While internet users have now access to a plethora of information, navigating through this data overload has become an increasingly tedious task. This has led to the need to build a technology that would facilitate navigation by generating customised recommendations to enhance customer experience. The *recommender system* is the major breakthrough that emerged and was deemed as a revolutionary technique to provide automated suggestions. Amongst the strategies developed by researchers, collaborative-based filtering and content-based filtering algorithms are the most commonly used today. Collaborative-based filtering algorithms work by matching a particular user against other users in the database who have similar history and tastes - eg. same movies liked. On the other hand, content-based filtering algorithms make use of the features of the movies that the user has liked in the past, eg. genres, to recommend new items. In the context of collaborative filtering, user-based and item-based nearest neighbour algorithms are very common, nevertheless, the  [matrix factorisation](https://www.inf.unibz.it/~ricci/ISR/papers/ieeecomputer.pdf) model is also a successful implementation of recommender systems.
 

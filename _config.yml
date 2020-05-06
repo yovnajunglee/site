@@ -2,7 +2,7 @@
 
 title: cool data stuff
 #locale: en_US
-#logo: # filename of a logo image that has been placed into your images directory
+logo: bio-photo.png
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
@@ -23,10 +23,7 @@ owner:
 highlight-color: '#CC0000'
 lowlight-color: '#000'
 
-  # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
-creative-commons:
-  cc-by: #yes
-  cc-by-nc: yes
+
 
 #DO NOT EDIT BEYOND THIS POINT
 # Jekyll configuration

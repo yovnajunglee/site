@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Matrix Factorisation
-excerpt: "Implementing the matrix factorisation algorithm for recommender systems"
+title: Building a movie recommender system
+excerpt: "Ever wondered how Netflix generates recommendations? Well, in this blog post, I implement the matrix factorisation model to build a recommendation engine."
 tags: [intro, R, matrix factorisation, recommender systems, clustering]
 comments: true
 category: blog
@@ -12,12 +12,12 @@ category: blog
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-# Introduction
 
 The explosive growth in technology has contributed to an overwhelming amount of online information and digitalized services through the rise of platforms such as *YouTube*, *Netflix* and *Amazon*.  While internet users have now access to a plethora of information, navigating through this data overload has become an increasingly tedious task. This has led to the need to build a technology that would facilitate navigation by generating customised recommendations to enhance customer experience. The *recommender system* is the major breakthrough that emerged and was deemed as a revolutionary technique to provide automated suggestions. Amongst the strategies developed by researchers, collaborative-based filtering and content-based filtering algorithms are the most commonly used today. Collaborative-based filtering algorithms work by matching a particular user against other users in the database who have similar history and tastes - eg. same movies liked. On the other hand, content-based filtering algorithms make use of the features of the movies that the user has liked in the past, eg. genres, to recommend new items. In the context of collaborative filtering, user-based and item-based nearest neighbour algorithms are very common, nevertheless, the  [matrix factorisation](https://www.inf.unibz.it/~ricci/ISR/papers/ieeecomputer.pdf) model is also a successful implementation of recommender systems.
 
-In this project, I will implement the matrix factorisation (MF) algorithm, from first principles, using the **R** programming language. 
-# Methods
+In this project, I will focus on implementing the matrix factorisation (MF) algorithm, from first principles, using the **R** programming language. 
+
+# Diving into the maths
 
 Before fitting any model, it is important to transform the data into the right format. In the context of recommender systems, we need to transform the ratings data to a user-item matrix, where the rows represent each user, and columns each movie. An example is as follows
 
@@ -29,7 +29,7 @@ Before fitting any model, it is important to transform the data into the right f
 
 
 ## Matrix Factorization
-Below is the mathematical formulation of the MF algorithm and a brief description of the steps involved in training the  model. 
+Below is the mathematical formulation of the MF algorithm and a brief description of the steps involved in training the model. 
 ### Model Formulation
 The underlying objective of the model is to map users and items to a joint latent factor of smaller dimension, such that the interactions between the users and the items are modelled as an inner product of that space. More simply, we aim to model a large user-item matrix (*U X N*) into two smaller matrices (*(U X f)x(f X N)*) of smaller dimensions (*f << N*). The columns (denoted by ![\boldsymbol{p_i}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_i%7D)) of the (*f X N*) matrix represent the weight associated to each item *i* onto the different factors. Similarly, each user *u* is allocated a certain weight onto the factors ( rows of the (*U X f*) , denoted by ![\boldsymbol{p_u}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_u%7D)) which could be seen as a measure of the extent of interest the user possesses for those factors. The predicted ratings obtained from the model are then calculated as follows:
 ![\boldsymbol{q_i}^T\boldsymbol{p}_u](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bq_i%7D%5ET%5Cboldsymbol%7Bp%7D_u)
@@ -44,7 +44,7 @@ We define the convergence criterion as the iterative difference between the cost
 
 $$\left|f(\boldsymbol{p_u^j},\boldsymbol{q_i^j}) - f(\boldsymbol{p_u^{j-1}},\boldsymbol{q_i^{j-1}}) \right|\leq \epsilon$$
 
-## Matrix Factorization with bias terms
+## Adding bias terms
 
 A large proportion of the variance in the ratings is associated to the individual effects arising for each user and each item. This can be explained by the fact that some users tend to give higher ratings than others, while some items are more highly rated than others. Thus the introduction of these additional bias terms will try to identify the portion of the ratings arising from the user effect and item effect as well as the resulting underlying user-item interaction effect (![\boldsymbol{q_i}^T\boldsymbol{p}_u](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bq_i%7D%5ET%5Cboldsymbol%7Bp%7D_u)). 
 
@@ -60,13 +60,11 @@ $$argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\hat
 
 Similar optimising and convergence strategies as described for the simple MF model can be applied here. 
 
-# Data
+# The MovieLens data set
 
 The MovieLens data set comprising of 100836 ratings for 9742 movies by 610 users will be used for this analysis. The data can be downloaded [here](https://grouplens.org/datasets/movielens/latest/). The following data set ([metadata](https://www.kaggle.com/rounakbanik/the-movies-dataset)) consisting of movie features was also used for the purpose of exploration analysis. 
 
-## Data Exploration
-
-Before atempting to fit the model, we take a look at the data to understand what kind of information we are looking at. 
+Before atempting to fit the model, we take a look at the data to understand what kind of information we are dealing with. 
 
 The MovieLens users have rated the movies on a scale from 0.5 (lowest) to 5 (highest). The distribution of the ratings is as follows:
 
@@ -100,7 +98,7 @@ Interestingly, we  identify clusters of old movies, clusters of newer high reven
 
 We find that cluster 1 is made up of animated movies mostly suited for children while a cluster of rom-com movies was also formed. Finally, high budget and high revenue action, adventure and Sci-Fi movies were clustered together. Notable movies in that cluster include *Star Wars*, *The Hunger Games*, *Avengers* and *Avatar*.
 
-# Application
+# Fitting the models to the data... 
 
 Now that we have a good understanding of what the data consists of, we can proceed with the modelling. The regularization parameter is found using cross-validation by fitting the matrix factorization model using stochastic gradient descent (MF-SGD) over a narrow range of ![\lambda](https://render.githubusercontent.com/render/math?math=%5Clambda) values. The results are displayed below
 
@@ -116,7 +114,7 @@ We then proceed by fitting the MF-SGD and MF-SGD including the biased terms, usi
 |:--:|:--:|
 |*MF-SGD*|*Biased MF-SGD*|
 
-# Results
+# How good is the algorithm? 
 
 The results below display the loadings of each item onto each latent feature and the user weightings onto each feature, respectively. We note a negative linear relationship between the features i.e a high loading on F2 would result on a low loading on F2 for both items, and more strongly for users. As weightings can be seen as the extent of interest into the item, users who load high on F2 will subsequently enjoy movies which also load high on F2.
 
@@ -148,7 +146,7 @@ Finally, we obtain the performance of the fitted models on the test data set:
 
 
 
-# Concluding Remarks
+# Final remarks
 
 Finally,  both algorithms appear to be performing fairly well, although the biased model is slightly less accurate than the simple model. This might be a case of overfitting which can be further looked into. This project was mostly focussed on implementing the matrix factorization algorithms. More could be done to attempt to improve the performance of this implementation:
 - Performing cross validation over a larger range of regularization parameters.

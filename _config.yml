@@ -1,6 +1,7 @@
 # Site wide configuration
 
-title: cool data stuff
+title: Data Explorer
+description: Learning about the data science world
 #locale: en_US
 #logo: bio-photo.png
 

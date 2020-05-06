@@ -36,7 +36,7 @@ The underlying objective of the model is to map users and items to a joint laten
 
 The above captures the interaction between user *u* and item *i* and is therefore an estimate of the ratings. The algorithm aims at modelling the observed ratings only and the entries of the vectors ![\boldsymbol{p_i}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_i%7D) and ![\boldsymbol{p_u}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_u%7D) are learnt by minimising the regularised sum of squares (cost function) as follows:
 
-$$\argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\boldsymbol{q_i}^T\boldsymbol{p_u})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2+\sum_i||\boldsymbol{q_i}||^2)$$
+$$argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\boldsymbol{q_i}^T\boldsymbol{p_u})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2+\sum_i||\boldsymbol{q_i}||^2)$$
 
 where ![\lambda](https://render.githubusercontent.com/render/math?math=%5Clambda) controls the magnitude of regularization and can be optimally found using cross-validation. **Stochastic Gradient Descent** will be used to fit the model to the observed ratings. This is done by looping over all observed ratings in the training set, and updating the parameters by a proportion, known as the learning rate, of the magnitude of the gradient of the surface to be minimised i.e the cost function, but in the opposite direction. This is repeated until convergence is reached. Due to lengthy run-times, the convergence criterion is sometimes set as a fixed maximum number of iterations, but this is not recommended. 
 
@@ -49,13 +49,14 @@ $$\left|f(\boldsymbol{p_u^j},\boldsymbol{q_i^j}) - f(\boldsymbol{p_u^{j-1}},\bol
 A large proportion of the variance in the ratings is associated to the individual effects arising for each user and each item. This can be explained by the fact that some users tend to give higher ratings than others, while some items are more highly rated than others. Thus the introduction of these additional bias terms will try to identify the portion of the ratings arising from the user effect and item effect as well as the resulting underlying user-item interaction effect (![\boldsymbol{q_i}^T\boldsymbol{p}_u](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bq_i%7D%5ET%5Cboldsymbol%7Bp%7D_u)). 
 
 The predicted ratings are then modelled as:
- ![\hat{r}_{ui} = \mu+ b_i +b_u + \boldsymbol{q_i}^T\boldsymbol{p_u}](https://render.githubusercontent.com/render/math?math=%5Chat%7Br%7D_%7Bui%7D%20%3D%20%5Cmu%2B%20b_i%20%2Bb_u%20%2B%20%5Cboldsymbol%7Bq_i%7D%5ET%5Cboldsymbol%7Bp_u%7D)
+ 
+ $$ \hat{r}_{ui} = \mu+ b_i +b_u + \boldsymbol{q_i}^T\boldsymbol{p_u} $$
  
  where ![\mu](https://render.githubusercontent.com/render/math?math=%5Cmu) represents the overall mean ratings, ![b_i](https://render.githubusercontent.com/render/math?math=b_i) and ![b_u](https://render.githubusercontent.com/render/math?math=b_u) is the effect arising from item *i* and user *u* respectively. 
  
  The new regularised cost function is then defined as:
 
-$$\argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\hat{r}_{ui})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2 + b_u^2+\sum_i||\boldsymbol{q_i}||^2+b_i^2)$$
+$$argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\hat{r}_{ui})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2 + b_u^2+\sum_i||\boldsymbol{q_i}||^2+b_i^2)$$
 
 Similar optimising and convergence strategies as described for the simple MF model can be applied here. 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A movie recommender system
+title: Matrix Factorisation
 excerpt: "Implementing the matrix factorisation algorithm for recommender systems"
 tags: [intro, R, matrix factorisation, recommender systems, clustering]
 comments: true

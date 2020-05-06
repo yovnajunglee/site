@@ -31,13 +31,13 @@ The underlying objective of the model is to map users and items to a joint laten
 
 The above captures the interaction between user *u* and item *i* and is therefore an estimate of the ratings. The algorithm aims at modelling the observed ratings only and the entries of the vectors ![\boldsymbol{p_i}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_i%7D) and ![\boldsymbol{p_u}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_u%7D) are learnt by minimising the regularised sum of squares (cost function) as follows:
 
-![\argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\boldsymbol{q_i}^T\boldsymbol{p_u})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2+\sum_i||\boldsymbol{q_i}||^2)](https://render.githubusercontent.com/render/math?math=%5Cargmin_%7B%5Cboldsymbol%7Bp%7D%2C%5Cboldsymbol%7Bq%7D%7D%5Cfrac%7B1%7D%7B2%7D%5Csum_%7B(u%2Ci)%5Cin%20k%7D(r_%7Bui%7D-%5Cboldsymbol%7Bq_i%7D%5ET%5Cboldsymbol%7Bp_u%7D)%5E2%2B%5Clambda(%5Csum_u%7C%7C%5Cboldsymbol%7Bp_u%7D%7C%7C%5E2%2B%5Csum_i%7C%7C%5Cboldsymbol%7Bq_i%7D%7C%7C%5E2))
+$$\argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\boldsymbol{q_i}^T\boldsymbol{p_u})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2+\sum_i||\boldsymbol{q_i}||^2)$$
 
 where ![\lambda](https://render.githubusercontent.com/render/math?math=%5Clambda) controls the magnitude of regularization and can be optimally found using cross-validation. **Stochastic Gradient Descent** will be used to fit the model to the observed ratings. This is done by looping over all observed ratings in the training set, and updating the parameters by a proportion, known as the learning rate, of the magnitude of the gradient of the surface to be minimised i.e the cost function, but in the opposite direction. This is repeated until convergence is reached. Due to lengthy run-times, the convergence criterion is sometimes set as a fixed maximum number of iterations, but this is not recommended. 
 
 We define the convergence criterion as the iterative difference between the cost function at iteration *j* and *j-1* as follows: 
 
-![\left|f(\boldsymbol{p_u^j},\boldsymbol{q_i^j}) - f(\boldsymbol{p_u^{j-1}},\boldsymbol{q_i^{j-1}}) \right|\leq \epsilon](https://render.githubusercontent.com/render/math?math=%5Cleft%7Cf(%5Cboldsymbol%7Bp_u%5Ej%7D%2C%5Cboldsymbol%7Bq_i%5Ej%7D)%20-%20f(%5Cboldsymbol%7Bp_u%5E%7Bj-1%7D%7D%2C%5Cboldsymbol%7Bq_i%5E%7Bj-1%7D%7D)%20%5Cright%7C%5Cleq%20%5Cepsilon)
+$$\left|f(\boldsymbol{p_u^j},\boldsymbol{q_i^j}) - f(\boldsymbol{p_u^{j-1}},\boldsymbol{q_i^{j-1}}) \right|\leq \epsilon$$
 
 ## Matrix Factorization with bias terms
 
@@ -50,7 +50,7 @@ The predicted ratings are then modelled as:
  
  The new regularised cost function is then defined as:
 
-![\argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\hat{r}_{ui})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2 + b_u^2+\sum_i||\boldsymbol{q_i}||^2+b_i^2)](https://render.githubusercontent.com/render/math?math=%5Cargmin_%7B%5Cboldsymbol%7Bp%7D%2C%5Cboldsymbol%7Bq%7D%7D%5Cfrac%7B1%7D%7B2%7D%5Csum_%7B(u%2Ci)%5Cin%20k%7D(r_%7Bui%7D-%5Chat%7Br%7D_%7Bui%7D)%5E2%2B%5Clambda(%5Csum_u%7C%7C%5Cboldsymbol%7Bp_u%7D%7C%7C%5E2%20%2B%20b_u%5E2%2B%5Csum_i%7C%7C%5Cboldsymbol%7Bq_i%7D%7C%7C%5E2%2Bb_i%5E2))
+$$\argmin_{\boldsymbol{p},\boldsymbol{q}}\frac{1}{2}\sum_{(u,i)\in k}(r_{ui}-\hat{r}_{ui})^2+\lambda(\sum_u||\boldsymbol{p_u}||^2 + b_u^2+\sum_i||\boldsymbol{q_i}||^2+b_i^2)$$
 
 Similar optimising and convergence strategies as described for the simple MF model can be applied here. 
 

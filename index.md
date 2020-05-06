@@ -10,5 +10,5 @@ As any explorer would, I will post some of new findings and discoveries that I m
 #### Current Interests and Projects:
 
 - Statistics
-` Machine Learning
+- Machine Learning
 

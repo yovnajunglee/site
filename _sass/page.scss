@@ -20,7 +20,7 @@ body {
 	text-transform: uppercase;
 	@include clearfix;
 	border-bottom-style: solid;
-	border-bottom-color: #6e6666;
+	border-bottom-color: #f6aa17;
 	border-bottom-width: .2em;
 }
 
@@ -228,7 +228,7 @@ $button-size: 1.5rem;
 	padding-top: 2em;
 	border-top-width: 2em;
 	border-top-style: solid;
-	border-top-color: $white;
+	border-top-color: $black;
 	h1 {
 		margin-top: 0;
 	}

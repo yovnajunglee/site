@@ -13,11 +13,13 @@ category: blog
 </script>
 
 
-The explosive growth in technology has contributed to an overwhelming amount of online information and digitalized services through the rise of platforms such as *YouTube*, *Netflix* and *Amazon*.  While internet users have now access to a plethora of information, navigating through this data overload has become an increasingly tedious task. This has led to the need to build a technology that would facilitate navigation by generating customised recommendations to enhance customer experience. The *recommender system* is the major breakthrough that emerged and was deemed as a revolutionary technique to provide automated suggestions. Amongst the strategies developed by researchers, collaborative-based filtering and content-based filtering algorithms are the most commonly used today. Collaborative-based filtering algorithms work by matching a particular user against other users in the database who have similar history and tastes - eg. same movies liked. On the other hand, content-based filtering algorithms make use of the features of the movies that the user has liked in the past, eg. genres, to recommend new items. In the context of collaborative filtering, user-based and item-based nearest neighbour algorithms are very common, nevertheless, the  [matrix factorisation](https://www.inf.unibz.it/~ricci/ISR/papers/ieeecomputer.pdf) model is also a successful implementation of recommender systems.
+The explosive growth in technology has contributed to an overwhelming amount of online information and digitalized services through the rise of platforms such as *YouTube*, *Netflix* and *Amazon*.  While internet users have now access to a plethora of information, navigating through this data overload has become an increasingly tedious task. This has led to the need to build a technology that would facilitate navigation by generating customised recommendations to enhance customer experience. The *recommender system* is the major breakthrough that emerged and was deemed as a revolutionary technique to provide automated suggestions.
 
-In this project, I will focus on implementing the matrix factorisation (MF) algorithm, from first principles, using the **R** programming language. 
+Amongst the strategies developed by researchers, collaborative-based filtering and content-based filtering algorithms are the most commonly used today. Collaborative-based filtering algorithms work by matching a particular user against other users in the database who have similar history and tastes - eg. same movies liked. On the other hand, content-based filtering algorithms make use of the features of the movies that the user has liked in the past, eg. genres, to recommend new items. In the context of collaborative filtering, user-based and item-based nearest neighbour algorithms are very common, nevertheless, the  [matrix factorisation](https://www.inf.unibz.it/~ricci/ISR/papers/ieeecomputer.pdf) model is also a successful implementation of recommender systems.
 
-# Diving into the maths
+In this project, I will focus on implementing the matrix factorisation (MF) algorithm, from first principles, using the **R** programming language. (The code can be found [here](https://github.com/yovna26/matrix-factorisation). 
+
+# The mathematics behind...
 
 Before fitting any model, it is important to transform the data into the right format. In the context of recommender systems, we need to transform the ratings data to a user-item matrix, where the rows represent each user, and columns each movie. An example is as follows
 
@@ -27,10 +29,8 @@ Before fitting any model, it is important to transform the data into the right f
 | *Monica* | 4 | | 5 | 2 |
 | *Marc* | 3 | 3 | 4 | 4 |
 
+## Model Formulation
 
-## Matrix Factorization
-Below is the mathematical formulation of the MF algorithm and a brief description of the steps involved in training the model. 
-### Model Formulation
 The underlying objective of the model is to map users and items to a joint latent factor of smaller dimension, such that the interactions between the users and the items are modelled as an inner product of that space. More simply, we aim to model a large user-item matrix (*U X N*) into two smaller matrices (*(U X f)x(f X N)*) of smaller dimensions (*f << N*). The columns (denoted by ![\boldsymbol{p_i}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_i%7D)) of the (*f X N*) matrix represent the weight associated to each item *i* onto the different factors. Similarly, each user *u* is allocated a certain weight onto the factors ( rows of the (*U X f*) , denoted by ![\boldsymbol{p_u}](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bp_u%7D)) which could be seen as a measure of the extent of interest the user possesses for those factors. The predicted ratings obtained from the model are then calculated as follows:
 ![\boldsymbol{q_i}^T\boldsymbol{p}_u](https://render.githubusercontent.com/render/math?math=%5Cboldsymbol%7Bq_i%7D%5ET%5Cboldsymbol%7Bp%7D_u)
 

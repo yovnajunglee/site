@@ -34,9 +34,8 @@
         {% else %}
           <h2><a href="{{ site.github.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
           <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        
-        {% for tag in post.tags %}
-                  <span class="tag-mark">{{ tag }}</span>
+           {% for tag in post.tags %}
+              <span class="tag-mark"> href="#{{ tag | slugify }}"> {{ tag }} </span>
             {% endfor %}
           
         {% endif %}

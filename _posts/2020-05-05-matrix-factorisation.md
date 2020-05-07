@@ -2,7 +2,7 @@
 layout: post
 title: Building a movie recommender system
 excerpt: "Ever wondered how Netflix generates recommendations? Well, in this blog post, I implement the matrix factorisation model to build a recommendation engine."
-tags: [intro, R, matrix factorisation, recommender systems, clustering]
+tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog
 ---

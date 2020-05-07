@@ -1,0 +1,7 @@
+.tag-mark{
+    font-size: 75%;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+    background: lighten($linkcolorhover, 20);
+    color: darken($linkcolorvisited, 10);
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a movie recommender system
-excerpt: "Ever wondered how Netflix generates recommendations? Well, in this blog post, I implement the matrix factorisation model to build a recommendation engine."
+excerpt: "Ever wondered how Netflix generates recommendations? Well, in this blog post, I build a movie recommendation engine using the matrix factorisation algorithm."
 tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog
@@ -17,7 +17,7 @@ The explosive growth in technology has contributed to an overwhelming amount of 
 
 Amongst the strategies developed by researchers, collaborative-based filtering and content-based filtering algorithms are the most commonly used today. Collaborative-based filtering algorithms work by matching a particular user against other users in the database who have similar history and tastes - eg. same movies liked. On the other hand, content-based filtering algorithms make use of the features of the movies that the user has liked in the past, eg. genres, to recommend new items. In the context of collaborative filtering, user-based and item-based nearest neighbour algorithms are very common, nevertheless, the  [matrix factorisation](https://www.inf.unibz.it/~ricci/ISR/papers/ieeecomputer.pdf) model is also a successful implementation of recommender systems.
 
-In this project, I will focus on implementing the matrix factorisation (MF) algorithm, from first principles, using the **R** programming language. (The code can be found [here](https://github.com/yovna26/matrix-factorisation). 
+In this project, I will focus on implementing the matrix factorisation (MF) algorithm, from first principles, using the **R** programming language. The code is available [here](https://github.com/yovna26/matrix-factorisation). 
 
 # The mathematics behind...
 
@@ -146,10 +146,9 @@ Finally, we obtain the performance of the fitted models on the test data set:
 
 
 
-# Final remarks
+# Some final remarks...
 
-Finally,  both algorithms appear to be performing fairly well, although the biased model is slightly less accurate than the simple model. This might be a case of overfitting which can be further looked into. This project was mostly focussed on implementing the matrix factorization algorithms. More could be done to attempt to improve the performance of this implementation:
+Finally,  both algorithms appear to be performing fairly well, although the biased model is slightly less accurate than the simple model. This might be a case of overfitting which can be further looked into. This project was mostly focussed on implementing the matrix factorization algorithms. More could be done to attempt to improve the performance of this implementation such as the following:
 - Performing cross validation over a larger range of regularization parameters.
 - Finding the optimal number of features, also using cross validation.
-- Using a bigger dataset.
 

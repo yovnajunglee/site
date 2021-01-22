@@ -1,6 +1,6 @@
 ---
 layout: post-index
-title: Past Projects
+title: Projects
 ---
 
 

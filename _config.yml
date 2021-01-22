@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: The Data Explorer
+#title: Yovna
 description: Learning about the data science world
 #locale: en_US
 #logo: bio-photo.png
@@ -9,7 +9,7 @@ description: Learning about the data science world
 owner:
   name: Yovna J.
   avatar: bio-photo.png
-  bio: "Aspiring data scientist"
+  bio: "Current MSc Student in Advanced Analytics"
   #email: laderast@ohsu.edu
   # Do not include the @ symbol in your Twitter username
   #twitter: laderast

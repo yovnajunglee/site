@@ -28,7 +28,7 @@ $compcolor 		  : spin($basecolor, 180);
 $bordercolor    : $basecolor;
 $white          : #fff;
 $black          : #111;
-$accentcolor    : #26ECA1;
+$accentcolor    : $textcolor;
 
 /* buttons */
 $primary			: $black;

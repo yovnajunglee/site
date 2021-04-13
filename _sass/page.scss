@@ -226,9 +226,9 @@ $button-size: 1.5rem;
 	@include clearfix;
 	clear: both;
 	padding-top: 2em;
-	border-top-width: 2em;
+	border-top-width: 1em;
 	border-top-style: solid;
-	border-top-color: rgba(255, 99, 71, 0.5);
+	border-top-color: $white;
 	h1 {
 		margin-top: 0;
 	}
@@ -238,7 +238,7 @@ $button-size: 1.5rem;
 		@include grid(12,10);
 		@include prefix(12,1);
 		@include suffix(12,1);
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 		@media #{$small} {
 			@include grid(12,6);
 			@include prefix(12,0);

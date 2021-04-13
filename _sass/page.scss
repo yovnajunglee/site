@@ -20,7 +20,7 @@ body {
 	text-transform: uppercase;
 	@include clearfix;
 	border-bottom-style: solid transparent;
-	border-bottom-color: #f6aa17;
+	border-bottom-color: $white;
 	border-bottom-width: .1em;
 }
 

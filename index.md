@@ -10,9 +10,10 @@ Bayesian Statistics, Functional Data Analysis, non-parametric statistics and gra
 
 # Teaching experience
 
-1. Assistant Lecturer in the Department of Statistical Sciences, University of Cape Town, South Africa. (June 2020 - Present)
+1. Assistant Lecturer in the Department of Statistical Sciences, University of Cape Town, South Africa. (June 2020 - Present) \
+  
   Courses taught: 
-  1. STA2005S: Linear Models (Mathematical Statistics stream)
-  2. STA3022F: Applied Multivariate Analysis (Applied Statistics stream)
+  * STA2005S: Linear Models (Mathematical Statistics stream)
+  * STA3022F: Applied Multivariate Analysis (Applied Statistics stream)
 
 

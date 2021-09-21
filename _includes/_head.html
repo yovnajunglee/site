@@ -11,8 +11,8 @@
 {% include _open-graph.html %}
 
 {% if site.owner.google.verify %}<!-- Webmaster Tools verfication -->
-<meta name="google-site-verification" content="vuYNrAcgeK76EsinJLh6wpgiJK1jHoPdU_6kDPR-OqA" />{% endif %}
-
+{% endif %}
+<meta name="google-site-verification" content="vuYNrAcgeK76EsinJLh6wpgiJK1jHoPdU_6kDPR-OqA" />
 {% if site.owner.bing-verify %}<meta name="msvalidate.01" content="{{ site.owner.bing-verify }}">{% endif %}
 
 {% capture canonical %}{{ site.github.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}

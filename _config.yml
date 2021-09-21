@@ -2,12 +2,12 @@
 title: Yovna Junglee
 description: Yovna Junglee Personal Blog
 locale: en_US
-logo: #favicon.png
+logo: logo.png
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:
   name: Yovna Junglee
-  avatar: images/bio-photo.jpg
+  avatar: bio-photo.jpg
   bio: "Current MSc Student in Advanced Analytics at the University of Cape Town, South Africa."
   email: yovna.junglee@uct.ac.za
   # Do not include the @ symbol in your Twitter username

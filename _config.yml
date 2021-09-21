@@ -1,8 +1,8 @@
 # Site wide configuration
 title: Yovna Junglee
-description: Yovna Junglee personal blog
-#locale: en_US
-#logo: bio-photo.png
+description: Yovna 
+locale: en_US
+logo: favicon.png
 
 # Enter the following platform usernames if you would like for them to appear on your site.
 owner:

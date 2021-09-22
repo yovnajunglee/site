@@ -7,5 +7,4 @@ comments: true
 category: blog
 ---
 
-
 The purpose of this study

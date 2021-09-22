@@ -6,3 +6,6 @@ tags: [epidemiology, infectious diseaseses, compartmental model]
 comments: true
 category: blog
 ---
+
+
+The purpose of this study

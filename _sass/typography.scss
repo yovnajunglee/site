@@ -10,11 +10,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
 }
 h1 {
-	@include font-size(28);
+	@include font-size(18);
 	color: $text-color;
 }
 h2 {
-	@include font-size(24);
+	@include font-size(18);
 }
 h3 {
 	@include font-size(18);

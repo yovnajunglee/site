@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Building a movie recommender system
-excerpt: "We build a recommender system using the matrix factorisation algorithm."
+title: Effectiveness of disease control strategies during an epidemic
+excerpt: "A SARS case study in Hong Kong"
 tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog

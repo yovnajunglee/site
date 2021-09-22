@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a movie recommender system
-excerpt: "In this project, we build a recommender system using the matrix factorisation algorithm."
+excerpt: "We build a recommender system using the matrix factorisation algorithm."
 tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog

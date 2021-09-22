@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Investigating the effectiveness of disease control strategies during an epidemic: A SARS case study in Hong Kong
-excerpt: "We implement an compartmental model to analyse the effectiveness of "
-tags: [epidemiology, infectious diseaseses, compartmental model]
+title: Building a movie recommender system
+excerpt: "We build a recommender system using the matrix factorisation algorithm."
+tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog
 ---
-
-The purpose of this study

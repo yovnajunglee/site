@@ -1,7 +1,7 @@
 --- 
 title: An investigation into the effectiveness of infection control strategies
 excerpt: "We build a compartmental data to investigate the effectiveness of isolation, quarantine, vaccination and PPE during SARS."
-tags: [intro, R, matrix factorisation, clustering]
+tags: [epidemiology, compartmental model, infectious diseases, SARS]
 comments: true
 category: blog
 ---

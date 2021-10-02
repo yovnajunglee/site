@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Building a movie recommender system
-excerpt: "We build a recommender system using the matrix factorisation algorithm."
+title: Investigation the effectiveness of infection control strategies.
+excerpt: "We build a compartmental data to investigate the effectiveness of isolation, quarantine, vaccination and PPE during an epidemic using SARS epidemiological data in Hong Kong."
 tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog

@@ -33,6 +33,7 @@ A description of the model is given below:
 |<img src="/Plots/SARS/model_des2.png" width="100%" height="100%">|
 
 
+
 The following results were obtained:
 
 1. An optimal contact tracing system where all of the infected individuals are quarantined within 2 days will reduce the number of deaths and cases by up to 50\%.

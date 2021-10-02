@@ -33,5 +33,14 @@ A description of the model is given below:
 |<img src="/Plots/SARS/model_des2.png" width="100%" height="100%">|
 
 
+The following results were obtained:
+
+1. An optimal contact tracing system where all of the infected individuals are quarantined within 2 days will reduce the number of deaths and cases by up to 50\%.
+2. Given that at least 80\% of infected individuals are identified within a contact tracing system, the rate at which the quarantine occurs marginally affects the epidemic curves provided that this is done within at most 20 days.
+3. Even though quarantine measures are in place, a lack of training and equipment in hospitals can exponentially increase the number of cases among the total population.
+4. A vaccination strategy has a greater the impact if the vaccination is available during the early stages of the epidemic. 
+5. There exists a trade-off between minimising the number of cases and deaths when a limited number of doses is available (2\% of population). By allocating a large proportion of the doses to the elderly people, the number of deaths decreases but the number of cases increases.
+
+
 
 

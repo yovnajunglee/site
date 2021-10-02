@@ -1,5 +1,4 @@
- 32 countries were affected with 8432 reported probable cases\footnote{Refer to Appendix \ref{sec:case_defs} for definitions officially established by WHO.} including 813 SARS-related deaths \cite{who_2015}. Mainland China was the most impacted country with 348 deaths from 5329 probable SARS cases as illustrated under Figure---
-layout: post
+--- 
 title: An investigation into the effectiveness of infection control strategies
 excerpt: "We build a compartmental data to investigate the effectiveness of isolation, quarantine, vaccination and PPE during SARS."
 tags: [intro, R, matrix factorisation, clustering]

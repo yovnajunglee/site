@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The effectiveness of infection control strategies during an epidemic: A SARS case study in Hong Kong
-excerpt: "
+excerpt: "We implement a compartmental model to investigate the effectiveness of quarantine, isolation, PPE and vaccination during the SARS epidemic."
 tags: [epidemiology, compartmental model, infectious diseasesg]
 comments: true
 category: blog

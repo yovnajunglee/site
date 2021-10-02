@@ -1,8 +1,8 @@
 ---
 layout: post
-title: The effectiveness of infection control strategies during an epidemic: A SARS case study in Hong Kong
-excerpt: "We implement a compartmental model to investigate the effectiveness of quarantine, isolation, PPE and vaccination during the SARS epidemic."
-tags: [epidemiology, compartmental model, infectious diseases]
+title: Building a movie recommender system
+excerpt: "We build a recommender system using the matrix factorisation algorithm."
+tags: [intro, R, matrix factorisation, clustering]
 comments: true
 category: blog
 ---

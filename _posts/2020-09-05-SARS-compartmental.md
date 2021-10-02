@@ -25,6 +25,6 @@ Due to the lack of information, the virus rapidly spread causing fatalities, esp
 Infection control measures such as quarantine, isolation, hospital equipment and vaccination have commonly been used in managing infectious diseases. However, the effectiveness of such methods can depend on the dynamics and epidemiology of the disease. Therefore, in this project, we compare and analyse the effectiveness of different strategies based on SARS epidemiology. Due to the heterogeneous transmission dynamics and disease effects of SARS on different groups, we categorise the population into healthcare workers, general public and the elderly people ($>60$). We develop a compartmental model to account for the different sub-populations of susceptible, exposed, vaccinated, quarantined, infectious, isolated and recovered individuals within each group.
 
 
-|<img src="/Plots/SARS/SARS-model-1.png" width="100%" height="100%">|
+|<img src="/Plots/SARS/SARS_model-1.png" width="100%" height="100%">|
 
 

@@ -26,7 +26,7 @@ Infection control measures such as quarantine, isolation, hospital equipment and
 
 A description of the model is given below:
 
-|<img src="/Plots/SARS/SARS_model-1.png" width="100%" height="100%">|
+|<img src="/Plots/SARS/SARS_model-1.png" width="70%" height="100%">|
 
 
 |<img src="/Plots/SARS/model_des1.png" width="100%" height="100%">|

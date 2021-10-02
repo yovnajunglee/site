@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The effectiveness of infection control strategies during an epidemic: A SARS case study in Hong Kong
+excerpt: "
 tags: [epidemiology, compartmental model, infectious diseasesg]
 comments: true
 category: blog
@@ -10,6 +11,8 @@ category: blog
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
+
+
 
 The 2003 SARS outbreak, which lead to 8432 reported cases and 813 related deaths, brought a shock to the affected countries and health organisations. In the absence of any vaccine or treatment, several countries became increasingly vulnerable. Due to the lack of information, the virus rapidly spread causing fatalities, especially among the elderly people. Healthcare facilities were under pressure, and the lack of protective equipment and training, contributed further to the spread of the disease.  Therefore, immediate responses and infection control measures were implemented to halt the epidemic. Border control measures were issued to prevent international spread and within countries, quarantine measures were in place. As more epidemiological data on SARS was gathered along with quarantine and isolation measures, the disease was effectively brought under control. The global epidemic ended in July 2003 and no cases have been reported since 2004. A lesson learnt from the outbreak was the importance of strong and coordinated public health facilities and an effective disease surveillance system to track the cases. 
 

@@ -36,10 +36,12 @@ A description of the model is given below:
 
 The following results were obtained:
 
-1. An optimal contact tracing system where all of the infected individuals are quarantined within 2 days will reduce the number of deaths and cases by up to 50\%.
+|<img src="/Plots/SARS/Cases_Q-1.png" width="100%" height="100%">|<img src="/Plots/SARS/Q_Deaths-1.png" width="100%" height="100%">|
+Figure: Cumulative cases and deaths after the introduction of quarantine measures at day 60 by varying quarantine and .
+
+1. An optimal contact tracing system where all of the infected individuals are quarantined within 2 days will reduce the number of deaths and cases by up to 50%.
 2. Given that at least 80% of infected individuals are identified within a contact tracing system, the rate at which the quarantine occurs marginally affects the epidemic curves provided that this is done within at most 20 days.
 
-|<img src="/Plots/SARS/Cases_Q-1.png" width="100%" height="100%">|<img src="/Plots/SARS/Q_Deaths-1.png" width="100%" height="100%">|
 
 
 4. Even though quarantine measures are in place, a lack of training and equipment in hospitals can exponentially increase the number of cases among the total population.

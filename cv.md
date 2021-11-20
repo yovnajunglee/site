@@ -2,4 +2,4 @@
 layout: page
 ---
 
-My CV can be downloaded here:
+<embed src="https://yovnajunglee.github.io/JUNGLEE_CV.pdf" type="application/pdf" />

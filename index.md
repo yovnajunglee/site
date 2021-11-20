@@ -22,7 +22,7 @@ We developed scalable spatial occupancy models using consensus Monte Carlo. The 
 
 ### Software
 
-+ Under development: [(BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM) - An R package for the Bayesian Analysis of Historical Functional Linear Models. 
++ (Under development) [BayesHFLM](https://github.com/yovnajunglee/BayesHFLM) - An R package for the Bayesian Analysis of Historical Functional Linear Models. 
 
 ### Teaching experience
 

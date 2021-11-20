@@ -20,6 +20,10 @@ Currently, I am working on the development of Bayesian historical functional lin
 2. *Honours thesis*: Spatial Occupancy Models - Reducing run-times.
 We developed scalable spatial occupancy models using consensus Monte Carlo. The objective was to make these models more efficient and practical for large data sets which arise from analysing multi-species data and/or large conservation efforts. 
 
+### Software
+
++ Under development: [(BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM) - An R package for the Bayesian Analysis of Historical Functional Linear Models. 
+
 ### Teaching experience
 
 1. *June 2020 - Present*: Assistant Lecturer in the Department of Statistical Sciences, University of Cape Town, South Africa. Courses taught:

@@ -17,6 +17,8 @@ Methodologically, my research interests include Bayesian inference, graphical mo
 1. *MSc thesis*: Bayesian methods for the analysis of functional data. (Ongoing)
 Currently, I am working on the development of Bayesian historical functional linear models to forecast atmospheric pollutants using daily meteorological processes. [(github.com/yovnajunglee/BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM)
 
++ Won the South African Statistical Association (SASA) Best Postgraduate Paper Award (First Prize, 2021)
+
 2. *Honours thesis*: Spatial Occupancy Models - Reducing run-times.
 We developed scalable spatial occupancy models using consensus Monte Carlo. The objective was to make these models more efficient and practical for large data sets which arise from analysing multi-species data and/or large conservation efforts. 
 

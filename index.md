@@ -4,7 +4,7 @@ title: "About me"
 ---
 
 
-I am an MSc student in the Department of Statistical Sciences at the Univerity of Cape Town. My research interests lie in the development of data-driven methodologies to solve challenges in the biomedical, ecological and environmental sciences. 
+I am an MSc student in the Department of Statistical Sciences at the University of Cape Town. My research interests lie in the development of data-driven methodologies to solve challenges in the biomedical, ecological and environmental sciences. 
 
 
 ### Research interests

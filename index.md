@@ -9,7 +9,7 @@ I am an MSc student in the Department of Statistical Sciences at the University 
 
 ### Research interests
 
-Methodologically, my research interests include Bayesian inference, graphical models and non-parametric methods (and intersections thereof). 
+Methodologically, my research interests include Bayesian inference, graphical models, functional data analysis and non-parametric methods (and intersections thereof). 
 
 
 ### Research Projects

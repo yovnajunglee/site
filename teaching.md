@@ -1,10 +1,9 @@
 ---
-layout: post-index
-title: Teaching
+layout: page
+title: Teaching Experience
 ---
 
 
-### Teaching experience
 
  *June 2020 - Present*: Assistant Lecturer in the Department of Statistical Sciences, University of Cape Town, South Africa. Courses taught:
   * STA2005S: Linear Models (Mathematical Statistics stream)

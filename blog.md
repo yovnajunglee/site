@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Teaching experience
+layout: post-index
+title: Teaching
 ---
 
 

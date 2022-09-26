@@ -13,7 +13,7 @@ I am a PhD student in the Department of Statistical Sciences at the University o
 Methodologically, my research interests include Bayesian inference, graphical models, spatio-temporal models, non-parametric methods (and intersections thereof) and environmental & ecological statistics.
 
 
-### Educaion
+### Education
 
 + *PhD Statistics. University of Toronto. 2022-Present.*
 

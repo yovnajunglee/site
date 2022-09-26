@@ -13,16 +13,19 @@ I am a PhD student in the Department of Statistical Sciences at the University o
 Methodologically, my research interests include Bayesian inference, graphical models, spatio-temporal models, non-parametric methods (and intersections thereof) and environmental & ecological statistics.
 
 
-### Research Projects
+### Educaion
 
-1. *MSc thesis*: Bayesian methods for the analysis of functional data. (University of Cape Town)
-
-We developed Bayesian historical functional linear models which account for measurement error in the predictor processes to forecast atmospheric pollutants using daily meteorological processes. [(github.com/yovnajunglee/BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM)
++ *PhD Statistics. University of Toronto. 2022-Present*
 
 
-2. *Honours thesis*: Spatial Occupancy Models - Reducing run-times. (University of Cape Town)
++ *MSc Advanced Analytics. University of Cape Town. 2020-2022*
 
-We developed scalable spatial occupancy models using consensus Monte Carlo. The objective was to make these models more efficient and practical for large data sets which arise from analysing multi-species data and/or large conservation efforts. 
+Thesis: Developed Bayesian historical functional linear models which account for measurement error in the predictor processes to forecast atmospheric pollutants using daily meteorological processes. [(github.com/yovnajunglee/BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM)
+
+
++ *BBusSci Analytics (Mathematical Statistics). University of Cape Town. 2016-2019*
+
+Research project: Developed scalable spatial occupancy models using consensus Monte Carlo. The objective was to make these models more efficient and practical for large data sets which arise from analysing multi-species data and/or large conservation efforts. 
 
 ### Awards
 

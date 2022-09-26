@@ -16,7 +16,7 @@ Methodologically, my research interests include Bayesian inference, graphical mo
 ### Research Projects
 
 1. *MSc thesis*: Bayesian methods for the analysis of functional data. (University of Cape Town)
-Currently, I am working on the development of Bayesian historical functional linear models to forecast atmospheric pollutants using daily meteorological processes. [(github.com/yovnajunglee/BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM)
+We developed Bayesian historical functional linear models which account for measurement error in the predictor processes to forecast atmospheric pollutants using daily meteorological processes. [(github.com/yovnajunglee/BayesHFLM)](https://github.com/yovnajunglee/BayesHFLM)
 
 
 2. *Honours thesis*: Spatial Occupancy Models - Reducing run-times. (University of Cape Town)

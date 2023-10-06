@@ -31,6 +31,10 @@ Research project: Developed scalable spatial occupancy models using consensus Mo
 
 + South African Statistical Association (SASA) Best Postgraduate Paper Award (First Prize, 2021) for *'Bayesian Analysis of Historical Functional Linear Models with application to air pollution forecasting'*. 
 
+### Service
+
++  Organising Committee member of the Statistical Sciences Applied Research and Education Seminar (ARES). Canadian Statistical Sciences Institute (CANSSI). Aug 2023-Present.
++  Vice-President of the Statistics Graduate Student Union (SGSU). Department of Statistical Sciences. Uni of Toronto. Sept 2023-Present.
 
 ### Software
 

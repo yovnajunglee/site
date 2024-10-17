@@ -4,7 +4,7 @@ title: "About me"
 ---
 
 
-I am a PhD student in the Department of Statistical Sciences at the University of Toronto.
+I am a PhD candidate in the Department of Statistical Sciences at the University of Toronto.
 
 
 
